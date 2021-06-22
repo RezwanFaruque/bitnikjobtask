@@ -1,0 +1,74 @@
+section {
+    &.footer {
+        background-color: #f5f5f7;
+        color: #1d1d1f;
+        font-size: 12px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container {
+            .row {
+                width: 100%;
+                .title {
+
+                    font-weight: 600;
+                }
+
+                .sections{
+                    justify-content: space-between;
+                    width: 100%;
+                    .inner-sec{
+                        .title{
+                            font-weight: 600;
+                            padding-bottom: 8px;
+                        }
+                        .list-link{
+                            ul{
+                                padding-left: 0;
+                                li{
+                                    list-style: none;
+                                    a{
+                                        text-decoration: none;
+                                        color: #515154;
+                                        font-size: 13px;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .follow-us-section{
+                    .title{
+                        font-weight: 600;
+                        padding-right: 10px;
+                    }
+                    .social-icons{
+                        a{
+                            padding-left: 3px;
+                            padding-right: 3px;
+                            
+                            i{
+                                color: #515154;
+                            }
+                        }
+                    }
+
+                }
+
+                .flex{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .last-cpy-left{
+                        
+                    }
+    
+                    .last-cpy-right{
+                       
+                    }
+                }
+                
+            }
+        }
+    }
+}

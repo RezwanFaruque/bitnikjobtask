@@ -1,0 +1,55 @@
+section {
+    &.bannar {
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(164, 192, 202);
+        
+        .banner-inner {
+            height: 100%;
+            .container {
+                height: 100%;
+                .row {
+                    height: 100%;
+
+                    .col-sm-12 {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        .text-sec {
+                            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                            color: #1d1d1f;
+                            .title {  
+                                font-size: 28px;
+                                
+
+                            }
+                            .subtitle {
+                                font-size: 18px;
+                                margin-top: 15px;
+                            }
+                            .text {
+                                font-size: 12px;
+                                margin-top: 15px;
+                            }
+                            .button {
+                                margin-top: 20px;
+                                .buy {
+                                    
+                                    text-decoration: none;
+                                    background-color: red;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    padding-top: 7px;
+                                    padding-bottom: 7px;
+                                    color: white;
+                                    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
