@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="img/logo/logo.png" rel="icon">
-    <title>TutionPoint Dashboard</title>
+    <title>AmazFit Admin Dashboard</title>
     <link href="{{ asset('admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/css/ruang-admin.min.css') }}" rel="stylesheet">
@@ -25,7 +25,7 @@
                 <div class="sidebar-brand-icon">
                     <img src="img/logo/logo2.png">
                 </div>
-                <div class="sidebar-brand-text mx-3">MeetTutor</div>
+                <div class="sidebar-brand-text mx-3">AmazFit</div>
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
@@ -43,146 +43,17 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm"
                     aria-expanded="true" aria-controls="collapseForm">
                     <i class="fab fa-fw fa-wpforms"></i>
-                    <span>TutorList</span>
+                    <span>All Product List</span>
                 </a>
                 <div id="collapseForm" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item" href="">All Tutors</a>
-                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
+                        <h6 class="collapse-header">Products Section</h6>
+                        <a class="collapse-item" href="">All Products</a>
+                        <a class="collapse-item" href="{{route('products.create')}}">Add Products</a>
                     </div>
                 </div>
             </li>
 
-
-            {{-- All Service areas Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Service District/Area</span>
-                </a>
-                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">District & Areas</h6>
-                        <a class="collapse-item" href="">All District</a>
-                        
-                    </div>
-                </div>
-            </li>
-
-            {{-- All Mediums And Clases --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm4"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Medium & Classes</span>
-                </a>
-                <div id="collapseForm4" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Medium & Classes</h6>
-                        <a class="collapse-item" href="">All District</a>
-                        
-                    </div>
-                </div>
-            </li>
-
-            {{-- Gurdian List Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm1"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>GurdianLists</span>
-                </a>
-                <div id="collapseForm1" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
-                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
-                    </div>
-                </div>
-            </li>
-
-
-            {{-- Active Tutions List Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm2"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Active TutionsList</span>
-                </a>
-                <div id="collapseForm2" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item" href="">Lists</a>
-                        
-                    </div>
-                </div>
-            </li>
-
-            {{-- GurdianFeedback Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Gurdian Feedback</span>
-                </a>
-                <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Forms</h6>
-                        <a class="collapse-item" href="form_basics.html">Form Basics</a>
-                        <a class="collapse-item" href="form_advanceds.html">Form Advanceds</a>
-                    </div>
-                </div>
-            </li>
-
-            {{-- Premium Tutor List Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm5"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Premium TutorList</span>
-                </a>
-                <div id="collapseForm5" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        
-                        <a class="collapse-item" href="">Premium Tutor Request List</a>
-                       
-                    </div>
-                </div>
-            </li>
-
-            {{-- Request Tutor List Pages --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm6"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Request TutorList</span>
-                </a>
-                <div id="collapseForm6" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        
-                        <a class="collapse-item" href="">Lists</a>
-                        
-                    </div>
-                </div>
-            </li>
-
-            {{-- All Mediums And Clases --}}
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm13"
-                    aria-expanded="true" aria-controls="collapseForm">
-                    <i class="fab fa-fw fa-wpforms"></i>
-                    <span>Create Tutor</span>
-                </a>
-                <div id="collapseForm13" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Create Tutor</h6>
-                        <a class="collapse-item" href="">Create Tutor</a>
-                        
-                    </div>
-                </div>
-            </li>
         </ul>
         <!-- Sidebar -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -368,7 +239,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <form action="" method="POST">
+                                <form action="{{route('admin.logout')}}" method="POST">
                                     @csrf
 
                                     <button class="dropdown-item" type="submit">

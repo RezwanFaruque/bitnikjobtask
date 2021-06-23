@@ -6,10 +6,15 @@
         <div class="card mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                 <h6 class="m-0 font-weight-bold text-primary">Admin Login</h6>
+                 @if (session('errors'))
+                    <div class="alert alert-danger">
+                        {!! session('errors') !!}
+                    </div>
+                @endif
             </div>
             <div class="card-body">
-                <form action="" method="POST">
-                    
+                <form action="{{route('admin.login')}}" method="POST">
+                    @csrf
                     <div class="form-group">
                        <div class="row">
                         <div class="col-lg-3">

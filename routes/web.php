@@ -21,3 +21,16 @@ Route::get('/admin/login', function () {
     return view('admin.login');
 });
 
+Route::post('/admin/login','AuthController@adminLogin')->name('admin.login');
+Route::post('/admin/logout','AuthController@adminlogout')->name('admin.logout');
+
+Route::middleware('auth')->group(function(){
+
+    Route::get('/admin/dashboard','AdminHomeController@index')->name('admin.index');
+    
+    // product resources route
+    Route::resource('products', 'ProductController');
+});
+
+
+

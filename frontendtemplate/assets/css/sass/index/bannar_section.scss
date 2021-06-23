@@ -47,6 +47,36 @@ section {
                                 }
                             }
                         }
+
+                        .image-sec{
+                            
+                            .bannar{
+                                width: auto;
+                                height: 200px;
+                                
+                                &.b-p1{
+                                    
+                                    position: absolute;
+                                    left: 10%;
+                                    top: 10%;
+                                    
+                                }
+                                &.b-p2{
+
+                                    position: absolute;
+                                   
+                                    bottom: 25%;
+                                    left: 41%;
+                                }
+                                &.b-p3{
+                                    position: absolute;
+                                    right: 10%;
+                                    /* top: 50%; */
+                                    bottom: 50%;
+                               
+                                }
+                            }
+                        }
                     }
                 }
             }

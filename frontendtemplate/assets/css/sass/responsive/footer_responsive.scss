@@ -1,0 +1,91 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section {
+            &.footer {
+                background-color: #f5f5f7;
+                color: #1d1d1f;
+                font-size: 12px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .container {
+                    .row {
+                        width: 100%;
+                        .title {
+        
+                            @if($width >= 767){
+                                text-align: center;
+                                margin-left: 30px;
+                            }
+                        }
+        
+                        .sections{
+                            @if($width >= 767){
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                            }
+                            .inner-sec{
+                                .title{
+                                    
+                                }
+                                .list-link{
+                                    ul{
+                                        @if($width >= 767){
+                                            padding-left: 32px;
+                                        }
+                                        li{
+                                           
+                                            a{
+                                               
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .follow-us-section{
+                            @if($width > 767){
+                                flex-direction: column;
+                                justify-content: center;
+                                width: 100%;
+                                align-items: center;
+                            }
+                            .title{
+                                
+                            }
+                            .social-icons{
+                                a{
+                                   
+                                    
+                                    i{
+                                       
+                                    }
+                                }
+                            }
+        
+                        }
+        
+                        .flex{
+                            @if($width >= 767){
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                           
+                            .last-cpy-left{
+                                
+                            }
+            
+                            .last-cpy-right{
+                               
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+}

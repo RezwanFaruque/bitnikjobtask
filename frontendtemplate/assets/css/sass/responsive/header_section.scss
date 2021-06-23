@@ -1,0 +1,60 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section {
+            &.header {
+                .topper-nav {
+                    @if ($width >=767px) {
+                    }
+                    .navbar {
+                        .collapse {
+                            ul {
+                                li {
+                                   
+                                    a {
+                                      
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .secondary-menu {
+                    
+                    .navbar {
+                        .collapse {
+                            @if ($width >=767px) {
+                                display: block !important;
+                            }
+
+                            ul {
+                                @if ($width >=767px) {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    width: 100%;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                li {
+                                   @if($width >= 767px){
+                                       padding-left: 7px;
+                                       padding-right: 7px;
+                                   }
+                                    span {
+                                        img {
+                                           
+                                        }
+                                    }
+                                    a {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

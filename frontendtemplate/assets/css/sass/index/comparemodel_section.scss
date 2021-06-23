@@ -36,9 +36,12 @@ section{
             background-repeat: no-repeat;
             background-size: cover;
             .slider-image{
-                img{
+                #slimagew{
+                    position: absolute;
+                    left: 62%;
                     width: 320px;
                     height: 522px;
+                    
                 }
             }
         }

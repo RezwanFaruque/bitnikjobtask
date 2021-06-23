@@ -1,0 +1,77 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section {
+            &.bannar {
+                @if ($width >=767px) {
+                    width: 100%;
+                    background-color: #a4c0ca;
+                    height: 100%;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
+                    text-align: center;
+                }
+
+                .banner-inner {
+                    .container {
+                        .row {
+                            .col-sm-12 {
+                                
+
+                                .text-sec {
+                                   
+                                    .title {
+                                       
+                                    }
+                                    .subtitle {
+                                       
+                                    }
+                                    .text {
+                                      
+                                    }
+                                    .button {
+                                        
+                                        .buy {
+                                           
+                                        }
+                                    }
+                                }
+
+                                .image-sec {
+                                    @if ($width >= 767) {
+                                        height: 200px;
+                                    }
+                                    .bannar {
+                                        width: auto;
+                                        @if ($width >= 767) {
+                                            height: 100px;
+                                        }
+
+                                        &.b-p1 {
+                                            @if ($width >= 767) {
+                                                left: 15%;
+                                                top: 12%;
+                                            }
+                                        }
+                                        &.b-p2 {
+                                            @if ($width >= 767) {
+                                                bottom: 0%;
+                                                left: 41%;
+                                            }
+                                        }
+                                        &.b-p3 {
+                                            @if ($width >= 767) {
+                                                right: 15%;
+                                                /* top: 50%; */
+                                                bottom: 43%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

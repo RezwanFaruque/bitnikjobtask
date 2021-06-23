@@ -69,14 +69,8 @@
         <div class="secondary-menu">
             <nav class="navbar navbar-expand-lg navbar-light bg-light-color">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav  mx-auto" id="secondary-menu">
                         <li class="nav-item">
                             <span class="icon"><img src="assets/vendor/images/one.svg" alt="" srcset=""></span>
                             <a class="nav-link" href="#">Apple Watch Series 6
@@ -169,7 +163,12 @@
                     </div>
                     <div class="col-lg-8 col-md-6 col-sm-12">
                         <div class="image-sec">
-                            <img src="assets/vendor/images/compare_s6__evsi0wlzp4ya_large.jpg" alt="" srcset="">
+                            <img class="bannar b-p1 img-fluid" src="assets/vendor/images/bannar-p1.png" alt=""
+                                srcset="">
+                            <img class="bannar b-p2 img-fluid" src="assets/vendor/images/bannar-p2.png" alt=""
+                                srcset="">
+                            <img class="bannar b-p3 img-fluid" src="assets/vendor/images/bannar-p2.png" alt=""
+                                srcset="">
                         </div>
                     </div>
 
@@ -388,9 +387,9 @@
         <div class="cr-button">
             <a class="cr-own" href="http://">Create Your Style</a>
         </div>
-        <div class="body-image">
+        <div class="body-image" id="slide_image">
             <div class="slider-image">
-                <img src="assets/vendor/images/watch-cto-case__dm8sxecyffma_large.png" alt="">
+                <img id="slimagew" src="assets/vendor/images/watch-cto-case__dm8sxecyffma_large.png" alt="">
             </div>
         </div>
     </section>
@@ -488,7 +487,7 @@
                 <div class="title">
                     AMAZFIT
                 </div>
-                
+
             </div>
             <hr>
             <div class="row">
@@ -624,7 +623,30 @@
     <script src="assets/js/script.js"></script>
 
     <script>
+
+
+
         $(document).ready(function () {
+
+            var scrolled = false;
+            
+            $(window).on('scroll', function () {
+                
+                if (window.pageYOffset > 1600 && !scrolled) {
+                    console.log('animated');
+                    $("#slimagew").animate({
+                        left: '38%',
+                    },'slow')
+                    if(window.innerWidth < 500){
+                        $("#slimagew").animate({
+                        left: '20%',
+                    },'slow')
+                    }
+                    scrolled = true;
+                }
+               
+                
+            });
 
             $('.variable-width').slick({
                 centerMode: true,
