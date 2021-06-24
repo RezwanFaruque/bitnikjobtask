@@ -1,0 +1,55 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section{
+            &.apple-watch-studio{
+
+                @if($width >= 767){
+                    margin-top: 30px;
+                }
+                
+                
+                .subtitle{
+                
+                    @if($width >= 767){
+                        
+                    }
+                }
+                .title{
+                    @if($width >= 767){
+                        font-size: #{make_for_mobile($width,48)}px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+                   
+                }
+                .cr-button{
+                    margin-bottom: 20px;
+                    .cr-own{
+                        padding-left: 17px;
+                        padding-right: 17px;
+                        padding-top: 7px;
+                        padding-bottom: 7px;
+                        border: 3px solid rgb(226, 143, 143);
+                        border-radius: 100px;
+                       
+                    }   
+                }
+                .body-image{
+                    @if($width >= 767){
+                        height: 422px;
+                    }
+                   
+                    .slider-image{
+                        #slimagew{
+                            @if($width >= 767){
+                                height: 422px;
+                                width: 250px;
+                                left: 35%;
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

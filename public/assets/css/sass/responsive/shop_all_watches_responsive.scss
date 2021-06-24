@@ -1,0 +1,51 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section {
+            &.shop-all-watch {
+                @if ($width >= 767) {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+               
+                .title {
+                    @if($width >= 767){
+                        font-size: #{make_for_mobile($width,56)}px;
+                    }
+                    
+                }
+
+                .body {
+                    .container {
+                        .row {
+                            .col-sm-12 {
+                                .main-bs {
+                                    .image {
+                                        margin-bottom: 20px;
+                                        display: flex;
+                                        justify-content: center;
+                                        img {
+                                            @if($width >= 767){
+                                                
+                                                height: 200px;
+                                                width: 200px;
+                                            }
+                                            
+                                        }
+                                    }
+                                    .title {
+                                        @if($width >= 767){
+                                                
+                                            font-size: 17px;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@each $width in $resposive-width {
+    @media screen and (max-width: #{$width}px) {
+        section {
+            &.new-elements {
+               
+                .image {
+                    @if($width >= 767){
+                        height: 400px;
+                        background-position: center;
+                    }
+                   
+                }
+                .title {
+                    @if($width >= 767){
+                        font-size: 32px;
+                    }
+                   
+                    
+        
+                }
+                .subtitle {
+                    @if($width >= 767){
+                        font-size: 17px;
+                    }
+                    
+                }
+                .new-product-link {
+                    a {
+                        @if($width >= 767){
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -9,7 +9,7 @@
         </div>
         <div class="card-body">
 
-            <form action="{{route('products.store')}}" method="POST" enctype="mulipart/form-data">
+            <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <div class="row">
@@ -35,6 +35,21 @@
                         <div class="col-lg-9">
                             <input class="form-control @error('price') is-invalid @enderror" name="price" placeholder="Price" type="text">
                             @error('price')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label>Size</label>
+
+                        </div>
+                        <div class="col-lg-9">
+                            <input class="form-control @error('size') is-invalid @enderror" name="size" placeholder="Size" type="text">
+                            @error('size')
                             <div class="alert alert-danger">{{ $message }}</div>
                             @enderror
                         </div>
@@ -128,6 +143,25 @@
                       </div>
                     </div>
 
+                    <div class="form-group">
+                      <div class="row">
+                        <legend class="col-form-label col-sm-3 pt-0">Blood Oxigen App2</legend>
+                        <div class="col-lg-9">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="blood_oxigen_measurer" id="exampleRadios5" value="blood oxigen app2" checked>
+                              <label class="form-check-label" for="exampleRadios1">
+                                Yes
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="blood_oxigen_measurer" id="exampleRadios6" value="null">
+                              <label class="form-check-label" for="exampleRadios2">
+                                No
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-group">
                       <div class="row">
                         <legend class="col-form-label col-sm-3 pt-0">Support Family Setup</legend>

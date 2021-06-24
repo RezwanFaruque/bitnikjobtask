@@ -41,7 +41,7 @@ section.header .secondary-menu .navbar .collapse ul li a {
 section.bannar {
   height: 80vh;
   width: 100%;
-  background-color: #a4c0ca;
+  background-color: #a5d1e1;
 }
 section.bannar .banner-inner {
   height: 100%;
@@ -323,6 +323,17 @@ section.footer .container .row .flex {
   justify-content: space-between;
 }
 @media screen and (max-width: 1280px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -340,6 +351,17 @@ section.footer .container .row .flex {
   }
 }
 @media screen and (max-width: 1200px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -357,6 +379,17 @@ section.footer .container .row .flex {
   }
 }
 @media screen and (max-width: 1080px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -374,6 +407,17 @@ section.footer .container .row .flex {
   }
 }
 @media screen and (max-width: 1024px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -391,6 +435,17 @@ section.footer .container .row .flex {
   }
 }
 @media screen and (max-width: 991px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -408,6 +463,17 @@ section.footer .container .row .flex {
   }
 }
 @media screen and (max-width: 767px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
   section.header .secondary-menu .navbar .collapse {
     display: block !important;
   }
@@ -422,6 +488,58 @@ section.footer .container .row .flex {
   section.header .secondary-menu .navbar .collapse ul li {
     padding-left: 7px;
     padding-right: 7px;
+  }
+}
+@media screen and (max-width: 575px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.header .topper-nav .navbar .collapse.show {
+    background-color: #212529;
+    z-index: 99;
+  }
+  section.header .topper-nav .navbar .collapse.show ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 1280px) {
